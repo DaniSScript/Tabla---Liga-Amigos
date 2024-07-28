@@ -59,12 +59,12 @@ button:hover {
 }
 
 .tabla-container {
-    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    overflow-x: auto; 
 }
 
 table {
     width: 100%;
-    min-width: 600px; /* Asegurar ancho mínimo para desencadenar desplazamiento horizontal */
+    min-width: 600px;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -73,9 +73,9 @@ th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-    overflow: hidden; /* Ocultar el desbordamiento de texto */
-    text-overflow: ellipsis; /* Añadir puntos suspensivos en el desbordamiento de texto */
-    white-space: nowrap; /* Evitar que el texto se envuelva */
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
 }
 
 th {
@@ -84,13 +84,13 @@ th {
 }
 
 th:first-child, td:first-child {
-    min-width: 150px; /* Ancho mínimo para la columna "Equipo" */
+    min-width: 150px; 
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px; /* Espaciado entre los inputs */
+    gap: 15px; 
 }
 
 .jornada {
@@ -128,7 +128,7 @@ th:first-child, td:first-child {
 }
 
 .resultado {
-    width: 50px; /* Hacer los inputs más pequeños */
+    width: 50px; 
     margin-top: 5px;
 }
 
@@ -141,15 +141,15 @@ th:first-child, td:first-child {
 
 @media (max-width: 480px) {
     .contenedor {
-        padding: 10px; /* Reducir padding en pantallas pequeñas */
+        padding: 10px; 
     }
 
     .grid-container {
-        grid-template-columns: 1fr; /* Cambia a una columna para pantallas pequeñas */
+        grid-template-columns: 1fr; 
     }
 
     label, input {
-        width: 93%; /* Asegura que los inputs ocupen el 100% del ancho en pantallas pequeñas */
+        width: 93%;
     }
 
     input, button {
@@ -158,7 +158,7 @@ th:first-child, td:first-child {
     }
 
     .jornada {
-        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+        flex-direction: column; 
     }
 
     .enfrentamiento {
@@ -183,6 +183,6 @@ th:first-child, td:first-child {
 
     table {
         width: 100%;
-        min-width: 400px; /* Ajustar el ancho mínimo para pantallas más pequeñas */
+        min-width: 400px; 
     }
 }
