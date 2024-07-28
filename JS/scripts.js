@@ -16,7 +16,7 @@ function generarJornada1() {
     console.log('Equipos inicializados:', equipos);
 
     const jornadaDiv = document.getElementById('jornada');
-    jornadaDiv.innerHTML = ''; // Limpiar jornadas anteriores
+    jornadaDiv.innerHTML = ''; 
 
     const enfrentamientos = generarEnfrentamientosPorJornada(1);
     console.log('Enfrentamientos generados para Jornada 1:', enfrentamientos);
@@ -46,7 +46,7 @@ function generarJornada1() {
     jornadaDiv.style.display = 'block';
     document.getElementById('actualizarTabla').style.display = 'block';
     document.getElementById('tablaPosiciones').style.display = 'table';
-    document.getElementById('pasarJornada2').style.display = 'block'; // Mostrar el botón de jornada 2
+    document.getElementById('pasarJornada2').style.display = 'block'; 
 }
 
 function generarJornada2() {
@@ -82,8 +82,8 @@ function generarJornada2() {
     console.log('Jornada 2 generada en el DOM');
 
     document.getElementById('actualizarTabla').style.display = 'block';
-    document.getElementById('pasarJornada2').style.display = 'none'; // Ocultar el botón de jornada 2
-    document.getElementById('pasarJornada3').style.display = 'block'; // Mostrar el botón de jornada 3
+    document.getElementById('pasarJornada2').style.display = 'none';
+    document.getElementById('pasarJornada3').style.display = 'block'; 
 }
 
 function generarJornada3() {
@@ -119,7 +119,7 @@ function generarJornada3() {
     console.log('Jornada 3 generada en el DOM');
 
     document.getElementById('actualizarTabla').style.display = 'block';
-    document.getElementById('pasarJornada3').style.display = 'none'; // Ocultar el botón de jornada 3
+    document.getElementById('pasarJornada3').style.display = 'none'; 
 }
 
 function generarEnfrentamientosPorJornada(jornada) {
@@ -209,7 +209,6 @@ function actualizarTabla() {
         equipo2.GF += resultado2;
         equipo2.GC += resultado1;
 
-        // Incrementar partidos jugados (PJ)
         equipo1.PJ++;
         equipo2.PJ++;
 
@@ -234,14 +233,13 @@ function actualizarTabla() {
 
     console.log('Equipos actualizados:', equipos);
 
-    // Llamar a la función para actualizar la tabla de posiciones en el DOM
     actualizarTablaEnDOM();
 }
 
 function actualizarTablaEnDOM() {
     const tabla = document.getElementById('tablaPosiciones');
     const tbody = tabla.querySelector('tbody');
-    tbody.innerHTML = '';  // Limpiar solo el cuerpo de la tabla
+    tbody.innerHTML = ''; 
 
     const equiposOrdenados = equipos.slice().sort((a, b) => b.PTS - a.PTS || b.DG - a.DG);
 
