@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Equipos</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+</head>
+<body>
+    <div class="contenedor">
+        <h1 id="titulo">Ingresar nombres de los equipos</h1>
+        <form id="formularioEquipos">
+            <div id="nombresEquipos" class="grid-container">
+                <input type="text" id="equipo1" name="equipo1" placeholder="Nombre del equipo 1" required>
+                <input type="text" id="equipo2" name="equipo2" placeholder="Nombre del equipo 2" required>
+                <input type="text" id="equipo3" name="equipo3" placeholder="Nombre del equipo 3" required>
+                <input type="text" id="equipo4" name="equipo4" placeholder="Nombre del equipo 4" required>
+            </div>
+            <button class="btn1" type="button" onclick="generarJornada1()">Generar Jornada 1</button>
+        </form>
+        <div id="jornada" class="jornada"></div>
+        <button id="actualizarTabla" style="display: none;" onclick="actualizarTabla()">Actualizar tabla</button>
+        <div class="tabla-container">
+            <table id="tablaPosiciones" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Equipo</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>DG</th>
+                        <th>PTS</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <button id="pasarJornada2" style="display: none;" onclick="generarJornada2()">Pasar a la Jornada 2</button>
+        <button id="pasarJornada3" style="display: none;" onclick="generarJornada3()">Pasar a la Jornada 3</button>
+    </div>
+    <script src="JS/scripts.js"></script>
+</body>
+</html>
