@@ -31,7 +31,7 @@ form {
 
 label, input {
     display: block;
-    width: 100%;
+    width: 96%;
     margin-bottom: 10px;
 }
 
@@ -89,7 +89,6 @@ th:first-child, td:first-child {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 15px; 
 }
 
